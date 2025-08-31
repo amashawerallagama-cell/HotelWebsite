@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Details - Drop Hostel</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            text-align: center;
+            background-image: url(imgs/nice.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Header */
+        header {
+            background: url('imgs/header.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 50px 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Section Styling */
+        section {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        section:hover {
+            transform: scale(1.02);
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Room Titles */
+        section h2 {
+            color: #006400;
+            font-size: 26px;
+            margin-bottom: 10px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Room Descriptions */
+        section p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: slideUp 1s ease-in-out forwards;
+        }
+
+        /* Room Images */
+        section img {
+            width: 100%;
+            border-radius: 10px;
+            height: auto;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Pricing */
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #e67e22;
+        }
+
+        /* Booking Button */
+        .booking-btn {
+            display: inline-block;
+            background-color: #27ae60;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .booking-btn:hover {
+            background-color: #219150;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .back-button {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 12px 25px;
+            background-color: #0044cc;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+
+        .back-button:hover {
+            background-color: #002a80;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Our Rooms</h1>
+    </header>
+
+    <!-- Double Room -->
+    <section id="double-room">
+        <h2>Double Room</h2>
+        <img src="imgs/doubleroomgrid.jpg" alt="Double Room">
+        <p>
+            Experience comfort and elegance in our cozy **Double Room**, perfect for solo travelers or couples.<br>
+            <strong>Room Details:</strong><br>
+            🛏️ **1 Double Bed** <br>
+            🚿 **Private Attached Bathroom** <br>
+            ❄️ **Fan Cooling** <br>
+            🦟 **Mosquito Nets** <br>
+            📶 **Free High-Speed Wi-Fi** <br>
+            🚭 **Non-Smoking Room** <br>
+            🌄 **Balcony with Stunning Views** of the Kandy Hills.
+        </p>
+        <p class="price">Price: LKR 2,500 / $8 / €7 per night</p>
+        <a href="https://www.booking.com/hotel/lk/drop-inn.en-gb.html" class="booking-btn" target="_blank">Book Now</a>
+    </section>
+
+    <!-- Dorm Room -->
+    <section id="dorm-room">
+        <h2>Dorm Room</h2>
+        <img src="imgs/dormroomgrid.jpg" alt="Dorm Room">
+        <p>
+            Perfect for budget travelers and backpackers, our Dorm Rooms provide a **social and affordable** stay.<br>
+            <strong>Room Details:</strong><br>
+            🛏️ **6 Bunk Beds** (shared with other travelers) <br>
+            🚿 **Shared Clean Bathroom** <br>
+            📶 **Free Wi-Fi** <br>
+            🔒 **Individual Lockers for Security** <br>
+            🚭 **Non-Smoking Room** <br>
+            🏡 **Spacious Lounge & Social Area**
+        </p>
+        <p class="price">Price: LKR 1,500 / $5 / €4 per night</p>
+        <a href="https://www.booking.com/hotel/lk/drop-inn.en-gb.html" class="booking-btn" target="_blank">Book Now</a>
+    </section>
+
+    <!-- Wood Cabin -->
+    <section id="villa">
+        <h2>Wood Cabin</h2>
+        <img src="imgs/WhatsApp Image 2025-02-27 at 18.30.56_e798fcd2.jpg" alt="Wood Cabin">
+        <p>
+            Indulge in a **rustic yet luxurious** stay in our **Wood Cabin**, perfect for families or groups.<br>
+            <strong>Room Details:</strong><br>
+            🛏️ **1 Queen Bed + 1 Single Bed** <br>
+            🚿 **Private Attached Bathroom** <br>
+            ❄️ **Fan Cooling & Mosquito Nets** <br>
+            🍽️ **Private Kitchen & Dining Space** <br>
+            🌳 **Outdoor Terrace with Relaxing Views** <br>
+            🚭 **Non-Smoking Room** <br>
+            🏡 **Spacious Living Area & Room Service**
+        </p>
+        <p class="price">Price: LKR 4,500 / $14 / €12 per night</p>
+        <a href="https://www.booking.com/hotel/lk/drop-inn.en-gb.html" class="booking-btn" target="_blank">Book Now</a>
+    </section>
+
+    <!-- Back to Home Button -->
+    <a href="index.html" class="back-button">🏠 Back to Home</a>
+
+</body>
+</html>
+
+

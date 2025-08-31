@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Drop Hostel</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            text-align: center;
+            background-image: url('imgs/nuwara.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Header */
+        header {
+            background: url('imgs/3.jpg') center/cover no-repeat;
+            padding: 60px;
+            color: white;
+            font-size: 1.8rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Sections */
+        section {
+            width: 80%;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        section h2 {
+            color: #cc0000;
+            position: relative;
+        }
+
+        /* Images */
+        .section-img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .section-img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Facilities & Services */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            font-size: 1.1rem;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        ul li:hover {
+            transform: translateX(10px);
+            color: #cc0000;
+        }
+
+        /* Contact Section */
+        .contact-details {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        .contact-details strong {
+            color: #cc0000;
+        }
+
+        /* Button Animation */
+        .book-btn {
+            background-color: #cc0000;
+            color: white;
+            padding: 15px 25px;
+            font-size: 1.2rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .book-btn:hover {
+            background-color: #990000;
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            font-size: 1rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        footer a {
+            color: #ffcc33;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    
+
+
+    .back-button {
+        display: inline-block;
+        margin: 20px auto;
+        padding: 12px 25px;
+        background-color: #0044cc;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    }
+
+    .back-button:hover {
+        background-color: #002a80;
+        transform: scale(1.1);
+    }
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Drop Hostel</h1>
+        <p>Your perfect escape in the heart of Kandy</p>
+    </header>
+
+    <section>
+        <h2>Our Location</h2>
+        <img src="imgs/kandy.jpg" alt="Drop Hostel Location" class="section-img">
+        <p>Drop Hostel is situated in the <strong>picturesque hills of Kandy</strong>, offering breathtaking panoramic views of the Kandy city, mountains, and the Kandy Lake. <br>
+           Our hostel provides a calm and cozy environment, making it perfect for travelers seeking both relaxation and adventure. 
+           We are located just 900 meters from the Temple of the Tooth Relic, making it an ideal choice for cultural exploration.</p>
+    
+        
+        
+            <!-- Embedded Google Map -->
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.678916168648!2d80.64058851477244!3d7.293353094740746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae369f13a3455ff%3A0x65811f60d8a1fcd2!2sDrop%20Hostel%20Kandy!5e0!3m2!1sen!2slk!4v1710246867896!5m2!1sen!2slk" 
+                    width="100%" 
+                    height="350" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        
+            <!-- Clickable Button to Redirect to Google Maps -->
+            <p>
+                <a href="https://www.google.com/maps/place/Drop+hostel/@7.290086,80.6449766,17z/data=!4m9!3m8!1s0x3ae36630cedf8507:0x5569f7cf0b3c1a0e!5m2!4m1!1i2!8m2!3d7.2895029!4d80.6484427!16s%2Fg%2F1hc2hk1_p?entry=ttu&g_ep=EgoyMDI1MDIwMy4wIKXMDSoASAFQAw%3D%3D"
+                   target="_blank"
+                   class="map-link"
+                   style="display: inline-block; padding: 10px 20px; background-color: #cc0000; color: white; text-decoration: none; font-weight: bold; border-radius: 5px;">
+                   👉 View on Google Maps
+                </a>
+            </p>
+        </section>
+        
+    
+
+    <section>
+        <h2>Facilities & Services</h2>
+        <img src="imgs/travel service.jpeg" alt="Drop Hostel Facilities" class="section-img">
+        <ul>
+            <li>✅ <strong>Free High-Speed WiFi</strong> - available in all public areas</li>
+            <li>✅ <strong>Complimentary Bicycle Rentals</strong> - explore the city with ease</li>
+            <li>✅ <strong>En-suite Bathrooms</strong> - with fresh towels & premium toiletries</li>
+            <li>✅ <strong>Sunset Viewpoint Balcony</strong> - a breathtaking experience</li>
+            <li>✅ <strong>Cozy Lounges & Common Areas</strong> - meet fellow travelers</li>
+            <li>✅ <strong>Car Tours</strong> - convenient transport services</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Nearby Attractions</h2>
+        <img src="imgs/of.jpg" alt="Nearby Attractions" class="section-img">
+        <p>Drop Hostel is ideally located near **some of the most iconic landmarks in Kandy, offering guests an opportunity to explore the city's rich heritage. 
+           Popular nearby attractions include:</p>
+        <ul>
+            <li>🏯 <strong>Temple of the Tooth Relic</strong> - 900m</li>
+            <li>🌲 <strong>Udawatta Kele Sanctuary</strong> - 1.2km</li>
+            <li>🏰 <strong>Royal Palace of Kandy</strong> - 1.5km</li>
+            <li>🌅 <strong>Bahirawakanda Buddha Statue</strong> - 2km</li>
+            <li>🚶 <strong>Kandy Lake Walkway</strong> - 800m</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Contact Us</h2>
+        <img src="imgs/contact-us-banner.jpg" alt="Contact Drop Hostel" class="section-img">
+        <p class="contact-details">
+            📍 <strong>Address:</strong><br>
+            📞 <strong>Phone:</strong><br>
+            📧 <strong>Email:</strong> <a href="mailto:dropinnkandy@gmail.com"></a> <br>
+            🌍 <strong>Website:</strong> <a href="https://dropinnkandy.com" target="_blank"></a>
+        </p>
+    </section>
+
+    <section>
+        <h2>Book Your Stay</h2>
+        <p>Plan your next adventure at Drop Hostel! Click below to book your stay today.</p>
+        <a href="https://www.booking.com/hotel/lk/drop-inn.en-gb.html" target="_blank">
+            <button class="book-btn">Book Now</button>
+        </a>
+    </section>
+
+    <!-- Back to Home Button -->
+<a href="index.html" class="back-button">🏠 Back to Home</a>
+
+    <footer>
+        <p>Design by Amasha</p>
+    </footer>
+
+</body>
+</html>
+
+
